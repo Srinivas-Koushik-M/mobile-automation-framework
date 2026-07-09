@@ -1,0 +1,6 @@
+platform_name: "Android"
+automation_name: "UiAutomator2"
+device_name: "Android Real Device"
+platform_version: ""
+udid: ""
+appium_server: "http://127.0.0.1:4723"

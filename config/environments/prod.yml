@@ -1,0 +1,6 @@
+app:
+  name: "PROD"
+
+android:
+  app_package: "com.company"
+  app_activity: ".MainActivity"

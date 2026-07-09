@@ -1,0 +1,6 @@
+platform_name: "iOS"
+automation_name: "XCUITest"
+device_name: "iPhone Real Device"
+platform_version: ""
+udid: ""
+appium_server: "http://127.0.0.1:4723"

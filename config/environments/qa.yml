@@ -1,0 +1,7 @@
+app:
+  name: "QA"
+
+android:
+  app_package: "com.company.qa"
+  app_activity: ".MainActivity"
+
