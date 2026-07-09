@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+.venv/
+venv/
+
+# Reports
+allure-results/
+allure-report/
+report.html
+
+# Logs
+logs/*.log
+
+# Screenshots
+screenshots/*.png
+
+# IDE
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
