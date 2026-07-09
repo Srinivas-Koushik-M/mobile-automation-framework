@@ -1,0 +1,6 @@
+app:
+  name: "UAT"
+
+android:
+  app_package: "com.company.uat"
+  app_activity: ".MainActivity"

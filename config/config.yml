@@ -1,0 +1,19 @@
+appium:
+  server_url: "http://127.0.0.1:4723"
+
+android:
+  platform_name: "Android"
+  automation_name: "UiAutomator2"
+  device_name: "Android Emulator"
+  app_package: ""
+  app_activity: ""
+
+ios:
+  platform_name: "iOS"
+  automation_name: "XCUITest"
+  device_name: "iPhone Simulator"
+
+timeouts:
+  implicit_wait: 10
+  explicit_wait: 20
+

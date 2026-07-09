@@ -1,18 +1,19 @@
 from drivers.android_driver import AndroidDriver
 from drivers.ios_driver import IOSDriver
+from config.settings import Settings
+
 
 class DriverFactory:
 
     @staticmethod
-    def get_driver(platform):
+    def get_driver():
+        config = Settings.load_config()
+        platform = config["platform_name"].lower()
 
-        if platform.lower() == 'android':
+        if platform == "android":
             return AndroidDriver.create_driver()
 
-
-        elif platform.lower() == 'ios':
+        if platform == "ios":
             return IOSDriver.create_driver()
 
-        else:
-            raise ValueError(f'Unsupported platform: {platform}')
-
+        raise ValueError(f"Unsupported platform: {platform}")
