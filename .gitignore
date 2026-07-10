@@ -23,3 +23,17 @@ screenshots/*.png
 
 # macOS
 .DS_Store
+
+# Generated reports
+reports/html/*
+reports/allure-results/*
+reports/allure-report/*
+
+# Failure screenshots
+screenshots/failed/*
+
+# Keep directory placeholders
+!reports/html/.gitkeep
+!reports/allure-results/.gitkeep
+!reports/allure-report/.gitkeep
+!screenshots/failed/.gitkeep
