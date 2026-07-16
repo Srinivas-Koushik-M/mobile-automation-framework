@@ -2,5 +2,5 @@ app:
   name: "PROD"
 
 android:
-  app_package: "com.company"
+  app_package: "resources/apps/ApiDemos-debug.apk"
   app_activity: ".MainActivity"

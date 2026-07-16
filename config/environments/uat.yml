@@ -2,5 +2,5 @@ app:
   name: "UAT"
 
 android:
-  app_package: "com.company.uat"
+  app_package: "resources/apps/ApiDemos-debug.apk"
   app_activity: ".MainActivity"

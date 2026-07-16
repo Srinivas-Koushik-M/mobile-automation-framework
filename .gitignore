@@ -37,3 +37,10 @@ screenshots/failed/*
 !reports/allure-results/.gitkeep
 !reports/allure-report/.gitkeep
 !screenshots/failed/.gitkeep
+
+# Mobile application binaries
+resources/apps/*.apk
+resources/apps/*.ipa
+resources/apps/*.zip
+
+!resources/apps/.gitkeep

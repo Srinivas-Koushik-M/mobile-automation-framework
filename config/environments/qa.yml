@@ -1,7 +1,8 @@
 app:
-  name: "QA"
+  name: "SauceLabsMyDemo"
+  path: "resources/apps/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk"
 
 android:
-  app_package: "com.company.qa"
-  app_activity: ".MainActivity"
-
+  app_package: "com.swaglabsmobileapp"
+  app_activity: ".SplashActivity"
+  app_wait_activity: "*"

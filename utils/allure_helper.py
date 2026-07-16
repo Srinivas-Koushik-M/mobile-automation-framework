@@ -1,9 +1,7 @@
 from pathlib import Path
-
 import allure
 
 from utils.logger import Logger
-
 
 class AllureHelper:
 
