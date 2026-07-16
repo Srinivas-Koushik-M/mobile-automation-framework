@@ -45,7 +45,7 @@ class Settings:
                 "device": device
             }
 
-            return cls._config
+        return cls._config
 
     @classmethod
     def get(cls, key):

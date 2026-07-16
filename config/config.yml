@@ -5,13 +5,16 @@ android:
   platform_name: "Android"
   automation_name: "UiAutomator2"
   device_name: "Android Emulator"
-  app_package: ""
+  app_package: "resources/apps/ApiDemos-debug.apk"
+  platform_version: "14"
   app_activity: ""
 
 ios:
   platform_name: "iOS"
   automation_name: "XCUITest"
-  device_name: "iPhone Simulator"
+  device_name: "iPhone 17 Pro"
+  udid: "03480B6C-2513-4334-9E94-62E706C8F85A"
+  platform_version: "26.5"
 
 timeouts:
   implicit_wait: 10

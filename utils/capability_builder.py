@@ -1,6 +1,6 @@
 from appium.options.android import UiAutomator2Options
 from appium.options.ios import XCUITestOptions
-
+from pathlib import Path
 from config.settings import Settings
 
 
@@ -33,13 +33,34 @@ class CapabilityBuilder:
         if config.get("udid"):
             options.udid = config["udid"]
 
-        android = config.get("android", {})
+        app_path = config.get("app", {}).get("path")
 
-        if android.get("app_package"):
-            options.app_package = android["app_package"]
+        if app_path:
+            absolute_app_path = (
+                    Path(__file__).resolve().parent.parent / app_path
+            ).resolve()
 
-        if android.get("app_activity"):
-            options.app_activity = android["app_activity"]
+            if not absolute_app_path.exists():
+                raise FileNotFoundError(
+                    f"APK not found: {absolute_app_path}"
+                )
+
+            options.app = str(absolute_app_path)
+
+        android_config = config.get("android", {})
+
+        if android_config.get("app_package"):
+            options.app_package = android_config["app_package"]
+
+        if android_config.get("app_activity"):
+            options.app_activity = android_config["app_activity"]
+
+        if android_config.get("app_wait_activity"):
+            options.app_wait_activity = android_config["app_wait_activity"]
+
+        options.app_wait_duration = 60000
+        options.auto_grant_permissions = True
+        options.new_command_timeout = 300
 
         return options
 

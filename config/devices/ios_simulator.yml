@@ -1,7 +1,7 @@
 platform_name: "iOS"
 automation_name: "XCUITest"
-device_name: "iPhone Simulator"
-platform_version: ""
-udid: ""
+device_name: "iPhone 17 Pro"
+platform_version: "26.5"
+udid: "03480B6C-2513-4334-9E94-62E706C8F85A"
 appium_server: "http://127.0.0.1:4723"
 

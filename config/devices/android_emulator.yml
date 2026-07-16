@@ -1,6 +1,6 @@
 platform_name: "Android"
 automation_name: "UiAutomator2"
 device_name: "Android Emulator"
-platform_version: ""
-udid: ""
+platform_version: "14"
+udid: "emulator-5554"
 appium_server: "http://127.0.0.1:4723"
